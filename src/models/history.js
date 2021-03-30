@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const historySchema = new mongoose.Schema({
-  value: {
-    type: Number,
+  history: {
+    type: String,
   },
 });
 

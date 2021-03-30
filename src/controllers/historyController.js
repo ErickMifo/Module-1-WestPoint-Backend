@@ -4,8 +4,7 @@ const History = mongoose.model('History');
 
 module.exports = {
   async index(req, res) {
-    const { page = 1 } = req.query;
-    const historys = await History.paginate({}, { page, limit: 10 });
+    const historys = await History.find();
     return res.json(historys);
   },
   async show(req, res) {
