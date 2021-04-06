@@ -15,6 +15,10 @@ module.exports = {
     const history = await History.create(req.body);
     return res.json(history);
   },
+  async update(req, res) {
+    const history = await History.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    return res.json(history);
+  },
   async destroy(req, res) {
     // eslint-disable-next-line no-unused-vars
     const history = await History.findOneAndRemove(req.params.id);
