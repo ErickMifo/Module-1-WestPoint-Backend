@@ -12,4 +12,6 @@ Project made for WestPoint's "Module 1".
 
 To install this project, you can just git clone and yarn add.
 
+Link to the frontend https://github.com/ErickMifo/Module-1-WestPoint-Frontend
+
 Made by Erick Mifo ( https://github.com/ErickMifo ).
